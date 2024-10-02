@@ -7,6 +7,20 @@
     <style>
         button{
             width: 100%;
+            border: none;
+            border-radius: 6px;
+        }
+        .red{
+            background-color: red;
+            color: white;
+        }
+        .blue{
+            background-color: mediumaquamarine;
+            color: white;
+        }
+        .orange{
+            background-color:orange;
+            color: white;
         }
     </style>
 </head>
@@ -18,34 +32,34 @@
             <th colspan="4"><input type="text" name="display"></th>
         </tr>
         <tr>
-            <td colspan="2"><button>Ac</button></td>
-            <td><button>c</button></td>
-            <td><button>*</button></td>
+            <td colspan="2"><button class="red">Ac</button></td>
+            <td><button class="blue">c</button></td>
+            <td><button class="orange">*</button></td>
         </tr>
         <tr>
             <td><button>7</button></td>
             <td><button>8</button></td>
             <td><button>9</button></td>
-            <td><button>/</button></td>
+            <td><button class="orange">/</button></td>
         </tr>
         <tr></tr>
         <tr>
             <td><button>4</button></td>
             <td><button>5</button></td>
             <td><button>6</button></td>
-            <td><button>+</button></td>
+            <td><button class="orange">+</button></td>
         </tr>
         <tr>
             <td><button>1</button></td>
             <td><button>2</button></td>
             <td><button>3</button></td>
-            <td><button>-</button></td>
+            <td><button class="orange">-</button></td>
         </tr>
         <tr>
-            <td><button>+-</button></td>
+            <td><button class="red">+/-</button></td>
             <td><button>0</button></td>
             <td><button>.</button></td>
-            <td><button>=</button></td>
+            <td><button class="blue">=</button></td>
         </tr>
     </table>
     </form>
