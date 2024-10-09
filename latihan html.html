@@ -4,76 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Hello World</title>
-    <style>
-        button{
-            width: 100%;
-            border: none;
-            border-radius: 6px;
-        }
-        .red{
-            background-color: red;
-            color: white;
-        }
-        .blue{
-            background-color: mediumaquamarine;
-            color: white;
-        }
-        .orange{
-            background-color:orange;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="latihancss.css">
+    <script src="latihanjs.js"></script>
 </head>
 <body>
-    <h1> hello world </h1>
-    <p> test hello world?</p>
-    <table>
+    <h1> Kalkulator</h1>
+    <table class="center">
         <tr>
-            <th colspan="4"><input type="text" name="display"></th>
+            <th colspan="4">
+                <input id="display" name="display" class="input">
+            </th>
         </tr>
         <tr>
-            <td colspan="2"><button class="red">Ac</button></td>
-            <td><button class="blue">c</button></td>
-            <td><button class="orange">*</button></td>
+            <td colspan="2"><button class="red" value="Ac" onclick="btnclick(this.innerText)"> Ac</button></td>
+            <td><button class="blue" value="c" onclick="btnclick(this.innerText)"> c</button></td>
+            <td><button class="orange" value="*" onclick="btnclick(this.innerText)"> *</button></td>
         </tr>
         <tr>
-            <td><button>7</button></td>
-            <td><button>8</button></td>
-            <td><button>9</button></td>
-            <td><button class="orange">/</button></td>
+            <td><button value="7" onclick="btnclick(this.innerText)"> 7</button></td>
+            <td><button value="8" onclick="btnclick(this.innerText)"> 8</button></td>
+            <td><button value="9" onclick="btnclick(this.innerText)"> 9</button></td>
+            <td><button class="orange"value="/" onclick="btnclick(this.innerText)"> /</button></td>
         </tr>
         <tr></tr>
         <tr>
-            <td><button>4</button></td>
-            <td><button>5</button></td>
-            <td><button>6</button></td>
-            <td><button class="orange">+</button></td>
+            <td><button value="4" onclick="btnclick(this.innerText)"> 4</button></td>
+            <td><button value="5" onclick="btnclick(this.innerText)"> 5</button></td>
+            <td><button value="6" onclick="btnclick(this.innerText)"> 6</button></td>
+            <td><button class="orange" value="+" onclick="btnclick(this.innerText)"> +</button></td>
         </tr>
         <tr>
-            <td><button>1</button></td>
-            <td><button>2</button></td>
-            <td><button>3</button></td>
-            <td><button class="orange">-</button></td>
+            <td><button value="1" onclick="btnclick(this.innerText)"> 1 </button></td>
+            <td><button value="2" onclick="btnclick(this.innerText)"> 2 </button></td>
+            <td><button value="3" onclick="btnclick(this.innerText)"> 3 </button></td>
+            <td><button class="orange" value="-" onclick="btnclick(this.innerText)"> - </button></td>
         </tr>
         <tr>
-            <td><button class="red">+/-</button></td>
-            <td><button>0</button></td>
-            <td><button>.</button></td>
-            <td><button class="blue">=</button></td>
+            <td><button class="red" value="+/-" onclick="btnclick(this.innerText)"> +/- </button></td>
+            <td><button value="0" onclick="btnclick(this.innerText)"> 0 </button></td>
+            <td><button value="." onclick="btnclick(this.innerText)"> . </button></td>
+            <td><button class="blue" value="=" onclick="btnclick(this.innerText)"> = </button></td>
         </tr>
     </table>
     </form>
-    <button onclick="turnon()"> button on</button>
-    <button onclick="turnoff()">button off</button>
-    
-    <script>
-    function turnon() {
-        alert( 'lampu dinyalakan');
-    }
-    function turnoff() {
-        alert( 'lampu dimatikan');
-    }
-    </script>
-
 </body>
 </html>
