@@ -1,34 +1,95 @@
+body{
+    font-family: monospace;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+}
+main{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
 h1{
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    color: black;
+}
+
+h2{
+    margin-top: 0px;
+}
+
+p{
     margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: black;
+}
+article{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.container{
+    padding: 75px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    height: 300px;
+    width: 315px;
+    margin-top: 30px;
 }
 
-input{
-    border-radius: 4;
+
+.name-input{
+    margin-left: 64px;
+    width: 180px;
+    margin-bottom: 9px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+}
+.dateofbirth-input{
+    margin-bottom: 9px;
+    width: 180px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px
+    
+    
 }
 
-.center {
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-     border-radius: 6px;
+#messages{
+    border-radius: 5px;
+    margin-top: 9px;
+    width: 302px;
+    height: 140px
 }
 
-button{
-    width: 100%;
-    border: none;
-    border-radius: 6px;
-}
-.red{
-    background-color: red;
-    color: white;
-}
-.blue{
-    background-color: mediumaquamarine;
-    color: white;
-}
-.orange{
-    background-color:orange;
-    color: white;
+#submit{
+    width: 308px;
+    height: 20px;
+    border-radius: 5px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    background-color: white;
 }
